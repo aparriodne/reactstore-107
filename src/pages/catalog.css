@@ -1,0 +1,61 @@
+.catalog{
+    background-color: #ffedde;
+
+}
+/* add / subtract btnd */
+button{
+    color: #e8c4a6;
+    border: 1px solid #34252f;
+    background-color: #34252f;
+    border-radius: 50% 10% 50% 10% !important;
+}
+
+button:hover{
+    border: 2px solid #34252f;
+    color:#34252f;
+    background-color:#e8c4a6;
+    font-weight: 700;
+    
+}
+/* shoa all btn */
+button.btn-dark{
+    border-radius: 50% 50% 10% 10% !important;
+    color:#e8c4a6;
+    background-color: #34252f;
+    margin-right: 10px;
+}
+
+button.btn-dark:hover{
+    color:#e8c4a6;
+    background-color: #34252f;
+    border-radius: 100%;
+    
+}
+/* catagory btns */
+button.btn-success{
+    text-transform: capitalize;
+    border-radius: 50% 50% 10% 10% !important;
+    margin-right: 3px;
+    border-color: #34252f;
+    background-color: #607466;
+    color:#e8c4a6;
+}
+
+button.btn-success:hover{
+    border: 2px solid #34252f;
+    color:#e8c4a6;
+    background-color: #607466;
+}
+/* add btns */
+button.btn-primary{
+    border-color: #34252f;
+    color:#e8c4a6;
+    background-color: #607466;
+
+}
+button.btn-primary:hover{
+    border:2px solid #34252f;
+    color: #34252f;
+    border-radius: 50%;
+    background-color: #607466;
+}

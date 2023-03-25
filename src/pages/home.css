@@ -1,0 +1,14 @@
+.home{
+    color:#34252f;
+    background-color: #e8c4a6;
+    border: 3px solid #34252f;
+}
+.home:hover{
+    background-color: #607466;
+    color:#e8c4a6;
+}
+.home h1{
+    text-transform:uppercase;
+    text-align: center;
+    padding: 7px;
+}
