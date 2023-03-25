@@ -5,8 +5,9 @@ import Catalog from './pages/catalog';
 import Home from "./pages/home";
 import About from './pages/about';
 import Cart from './pages/cart';
-import 'font-awesome/css/font-awesome.min.css';
+import Admin from './pages/admin';
 
+import 'font-awesome/css/font-awesome.min.css';
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap";
 
@@ -16,9 +17,11 @@ function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Navbar></Navbar>
+        <Navbar>
+        </Navbar>
 
         <Routes>
+          <Route path='/admin' element={<Admin></Admin>}></Route>
           <Route path='/' element={<Home></Home>}></Route>
           <Route path='/catalog' element={<Catalog></Catalog>}></Route>
           <Route path='/about' element={<About></About>}></Route>

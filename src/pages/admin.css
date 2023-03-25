@@ -1,0 +1,14 @@
+.admin{
+    background-color: #e8c4a6;
+    display: flex;
+}
+
+.prod{
+    flex: 2
+    
+}
+
+.coup{
+    flex: 2
+    
+}

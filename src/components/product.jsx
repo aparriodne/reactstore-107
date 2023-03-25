@@ -20,18 +20,22 @@ function Product(props){
         return total.toFixed(2);
     }
 
+        function handleAddClick(){
+            return console.log('hello')
+    }
+
     return(
         <div className="product">
             <h5>{props.data.title}</h5>
             <img src={"/images/"+ props.data.image} alt="" />
-{/*  */}
+
             <div className="prices">
                 <label>Price ${props.data.price.toFixed(2)}</label>
                 <label>Total ${getTotal()}</label>
             </div>
             <div className='control'>
             <QuantityPicker onChange={onQuantityChanged}></QuantityPicker>
-            <button className="btn btn-primary">Add</button>
+            <button onClick={handleAddClick} className="btn btn-primary">Add</button>
             </div>
         </div>
     );

@@ -21,7 +21,7 @@ function Catalog() {
         setProdsToDisplay(product);
     }
   
-    
+
     function filter(catagory){
         let list=[];
 
@@ -48,7 +48,8 @@ function Catalog() {
 
             {catagory.map(c => <button key={c} onClick={()=>filter(c)} className="btn btn-success btn-filter">{c}</button>)}
             <br></br>
-            {prodsToDisplay.map((p) =>(<Product key={p._id} data={p}></Product>))}
+            {prodsToDisplay.map((p) =>(
+            <Product key={p._id} data={p}></Product>))}
         </div>
     );
 }
