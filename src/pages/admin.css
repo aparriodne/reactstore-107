@@ -1,14 +1,14 @@
-.admin{
+.ad-main{
     background-color: #e8c4a6;
     display: flex;
+    flex-direction: row;
 }
 
-.prod{
-    flex: 2
-    
+main #prod{
+    margin-left: 20%;
+    margin-right: 25%;
 }
-
-.coup{
-    flex: 2
-    
+main #coup{
+    margin-right: 20%;
+    margin-right: 25%;
 }
