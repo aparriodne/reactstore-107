@@ -1,9 +1,17 @@
 .cart .parent{
+    margin: 3% 10% 0% 10%;
     display: flex;
 }
 .cart .products{
     flex: 4;
 }
 .cart .total{
+    background-color: #34252f;
+    color: #e8c4a6;
     flex: 1;
+    height: 200px;
+}
+.cart{
+    background-color: #ffedde;
+    background-size: cover;
 }

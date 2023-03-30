@@ -3,9 +3,11 @@
     text-transform: capitalize;
     color: #34252f;
     display: flex;
+    height: 100px;
+    border-bottom:5px solid #34252f;
 }
 .prod-cart img{
-    width: 50px;
+    width: 0%;
     flex:1
 }
 .prod-cart h5{
