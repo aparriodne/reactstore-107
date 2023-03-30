@@ -7,7 +7,7 @@ var catalog =[
         "_id":"unique-ID-1"
     },
     {
-        "title":"carrot",
+        "title":"carrots",
         "catagory":"produce",
         "price":5.00,
         "image":"carrot.jpg",

@@ -1,8 +1,17 @@
 import "./navbar.css";
 
 import {Link} from 'react-router-dom'
+import { useContext } from "react";
+import globalContext from './../state/globalContext';
 
 function Navbar(){
+
+  const numOfProd = useContext(globalContext).getNumberOfProducts;
+  
+
+
+
+
     return (
         
         <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -37,9 +46,11 @@ function Navbar(){
             </li>
           </ul>
           <form className="d-flex" role="search">
-            <Link className="btn btn-outline-success" to="/cart">
-              <i className="fa fa-shopping-cart" aria-hidden="true"></i> Cart
-            </Link>
+          <Link className="btn btn-outline-success position-relative" to="/cart">
+              <span className="position-absolute top-100 start-0 translate-middle badge square-pill bg-success">{numOfProd()}</span>
+              <i className="fa fa-shopping-cart" aria-hidden="true"></i>
+              {' '}Cart
+          </Link>
           </form>
         </div>
       </div>

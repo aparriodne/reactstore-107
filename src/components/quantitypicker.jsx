@@ -5,7 +5,7 @@ function QuantityPicker(props){
     let [quantity, setQuantity] = useState(1);
 
     function decrease(){
-        if (quantity===0) return;
+        if (quantity === 0) return;
         let val = quantity -1;
         setQuantity(val);
         props.onChange(val);
@@ -20,7 +20,7 @@ function QuantityPicker(props){
 
     return(
         <div className="qt-picker">
-            <button disabled={quantity === 0} onClick={decrease}>-</button>
+            <button hidden = {quantity === 1} onClick={decrease}>-</button>
             <label>{quantity}</label>
             <button onClick={increase}>+</button>
         </div>

@@ -1,0 +1,16 @@
+.prod-cart{
+    background-color: #e8c4a6;
+    text-transform: capitalize;
+    color: #34252f;
+    display: flex;
+}
+.prod-cart img{
+    width: 50px;
+    flex:1
+}
+.prod-cart h5{
+    flex:3
+}
+label{
+    margin-right: 10px;
+}
