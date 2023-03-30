@@ -17,7 +17,7 @@ button:hover{
     font-weight: 700;
     
 }
-/* shoa all btn */
+/* show all btn */
 button.btn-dark{
     border-radius: 50% 50% 10% 10% !important;
     color:#e8c4a6;
@@ -31,6 +31,12 @@ button.btn-dark:hover{
     border-radius: 100%;
     
 }
+
+#allprod:active{
+    background-color: #e8c4a6;
+    color: #34252f;
+}
+
 /* catagory btns */
 button.btn-success{
     text-transform: capitalize;
@@ -46,6 +52,12 @@ button.btn-success:hover{
     color:#e8c4a6;
     background-color: #607466;
 }
+
+.cats:active{
+    background-color: #e8c4a6 !important;
+    color: #607466 !important;
+}
+
 /* add btns */
 button.btn-primary{
     border-color: #34252f;
@@ -59,3 +71,4 @@ button.btn-primary:hover{
     border-radius: 50%;
     background-color: #607466;
 }
+

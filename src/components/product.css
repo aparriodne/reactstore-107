@@ -41,6 +41,11 @@
     margin-left: 7px;
 }
 
+#addbtn:active{
+    background-color: #34252f;
+    color: #607466;
+}
+
 @media (max-width: 400px){
     .product{
         width:85%;

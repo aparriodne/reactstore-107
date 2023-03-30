@@ -44,9 +44,9 @@ function Catalog() {
             <h5>From the ashes rises {products.length} new products for you</h5>
             <br></br>
 
-            <button onClick={clearFilter} className="btn btn-dark btn-filter">Show All</button>
+            <button onClick={clearFilter} id='allprod' className="btn btn-dark btn-filter">Show All</button>
 
-            {catagory.map(c => <button key={c} onClick={()=>filter(c)} className="btn btn-success btn-filter">{c}</button>)}
+            {catagory.map(c => <button key={c} onClick={()=>filter(c)} className="cats btn btn-success btn-filter">{c}</button>)}
             <br></br>
             {prodsToDisplay.map((p) =>(
             <Product key={p._id} data={p}></Product>))}

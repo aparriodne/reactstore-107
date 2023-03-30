@@ -35,7 +35,7 @@ function Cart(){
 
                     <h5>${getTotalPay()}</h5>
 
-                    <button className='btn btn-success'>Pay Now</button>
+                    <button className='paybtn btn btn-success'>Pay Now</button>
 
                 </div>
             </div>

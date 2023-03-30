@@ -48,7 +48,7 @@ function Product(props){
             </div>
             <div className='control'>
             <QuantityPicker onChange={onQuantityChanged}></QuantityPicker>
-            <button onClick={handleAddClick} className="btn btn-primary">Add</button>
+            <button onClick={handleAddClick} id='addbtn' className="btn btn-primary">Add</button>
             </div>
         </div>
     );

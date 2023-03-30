@@ -15,3 +15,7 @@
     background-color: #ffedde;
     background-size: cover;
 }
+.paybtn:active{
+    background-color: #e8c4a6 !important;
+    color: #607466 !important;
+}

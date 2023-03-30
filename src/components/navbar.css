@@ -58,3 +58,13 @@ form.d-flex .btn-outline-success:hover{
 .navbar-toggler{
     color:#34252f !important;
 }
+
+.cart:active{
+    background-color: #e8c4a6 !important;
+    color: #34252f !important;
+}
+
+#indi{
+    background-color: #607466 !important;
+    color: #e8c4a6;
+}
