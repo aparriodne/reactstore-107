@@ -1,51 +1,58 @@
+/* navbar bckgrn color */
 nav.navbar.navbar-expand-lg.bg-body-tertiary{
     background-color: #34252f;
 }
+
+
+/* Phoenix */
 nav .navbar-brand{
     font-size: 50px;
     color:#e8c4a6;
 }
+
+nav .navbar-brand:hover{
+    color: #607466;
+}
+
+
+/* home lnk */
 a.nav-link.active{
     color: #e8c4a6 !important;
-
 }
 
 a.nav-link.active:hover{
     color: #607466 !important;
 }
 
+
+/* C, A, AP lnks */
 a.nav-link {
     color: #e8c4a6;
 }
+
 a.nav-link:hover{
-    color: none;
-}
-button.btn-outline-success{
-    background-color: #e8c4a6;
-    color: #34252f;
-    border-color: #607466;
+    color: #607466;
 }
 
+
+/* lnk drp dwn btn */
 span.navbar-toggler-icon{
     background-color: #e8c4a6;
     border-radius: 20% 10% 20% 10% !important;
 }
+
 button.navbar-toggler:hover{
     border-radius: 20% 10% 20% 10% !important;
     background-color: #607466;
     padding: 5px;
 }
 
-button.btn-outline-success:hover{
-    background-color: #607466;
-}
-nav .navbar-brand:hover{
-    color: #607466;
-}
-a.nav-link:hover{
-    color: #607466;
+.navbar-toggler{
+    color:#34252f !important;
 }
 
+
+/* cart lnk */
 form.d-flex .btn-outline-success{
     color:#e8c4a6;
     border: solid #e8c4a6
@@ -55,15 +62,14 @@ form.d-flex .btn-outline-success:hover{
     background-color: #607466;
 }
 
-.navbar-toggler{
-    color:#34252f !important;
-}
-
 .cart:active{
+    border-color: #34252f !important;
     background-color: #e8c4a6 !important;
     color: #34252f !important;
 }
 
+
+/* cart count id */
 #indi{
     background-color: #607466 !important;
     color: #e8c4a6;

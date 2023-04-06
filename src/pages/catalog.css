@@ -56,6 +56,7 @@ button.btn-success:hover{
 .cats:active{
     background-color: #e8c4a6 !important;
     color: #607466 !important;
+    border-color: #607466 !important;
 }
 
 /* add btns */

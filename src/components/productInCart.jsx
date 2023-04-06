@@ -9,10 +9,14 @@ function ProductInCart(props){
     
     return (
         <div className='prod-cart'>
-            <img src={'/images/' + props.data.image} alt='' />
-            <h5>{props.data.title}{' Quantity: '}{props.data.quantity}</h5>
+            <div className='img sqr'>
+                <img src={'/images/' + props.data.image} alt='' />
+            </div>
+            <div className='cnt'>
+                <h5>{props.data.title}{' Quantity: '}{props.data.quantity}</h5>
+            </div>
             <div>
-                <label>${getTotal()}</label>
+                <label className='pay'>Price: ${getTotal()}</label>
             </div>
         </div>
     );

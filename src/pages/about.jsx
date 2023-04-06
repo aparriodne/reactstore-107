@@ -13,15 +13,12 @@ const [displayEmail, setDisplayEmail] = useState(false);
         if(displayEmail){
             return<h3>michaelproudfoot@yail.com</h3>
         }
-        else {
-            return null;
-        }
     }
-
+    
     return(
         <div className='about'>
             <h1>What makes us, us!</h1>
-            {getEmailSection()}
+            <div className="mail">{getEmailSection()}</div>
             <button className="emailbtn" onClick={toggleEmail}> Show Email  </button>
 
         </div>

@@ -1,3 +1,12 @@
+/* cat pg */
+@media (max-width: 400px){
+    .product{
+        width:85%;
+        margin-left: 2%;
+        height: auto;
+    }
+}
+/* prod ctr*/
 .product{
     display: inline-block;
     width:200px;
@@ -11,12 +20,12 @@
 .product:hover{
     border: 5px solid #607466;
 }
-
+/* prod title */
 .product h5{
     color: black;
     text-transform: capitalize;
 }
-
+/* prod img */
 .product img{
     margin-top: 30px;
     width: 150px;
@@ -24,6 +33,7 @@
     border-radius: 50px;
 }
 
+/* P & T ctr */
 .prices{
     display: flex;
 }
@@ -32,6 +42,7 @@
     flex: 1;
 }
 
+/* cnt & add ctr */
 .control{
     display: flex;
     padding-left: 20%;
@@ -41,15 +52,9 @@
     margin-left: 7px;
 }
 
+/* add btn */
 #addbtn:active{
     background-color: #34252f;
     color: #607466;
-}
-
-@media (max-width: 400px){
-    .product{
-        width:85%;
-        margin-left: 2%;
-        height: auto;
-    }
+    border-color: #607466;
 }

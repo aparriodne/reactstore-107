@@ -1,21 +1,58 @@
-.cart .parent{
-    margin: 3% 10% 0% 10%;
-    display: flex;
-}
-.cart .products{
-    flex: 4;
-}
-.cart .total{
-    background-color: #34252f;
-    color: #e8c4a6;
-    flex: 1;
-    height: 200px;
-}
+/* cart pg */
 .cart{
     background-color: #ffedde;
     background-size: cover;
 }
+
+
+/* basket */
+.basket{
+    display: flex;
+    /* border:5px solid red; */
+}
+
+
+/* item & price */
+.products{
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    flex:4;
+}
+
+
+/* pay ctr */
+.total{
+    background-color: #34252f;
+    color: #e8c4a6;
+    /* border:5px solid orange; */
+    flex: 1;
+    
+}
+
+.totdis{
+    position:fixed;
+    right: 0;
+    padding-right: 5%;
+}
+
+
+.total h4{
+    margin-top: 10px;
+}
+
 .paybtn:active{
     background-color: #e8c4a6 !important;
     color: #607466 !important;
+    border-color:#607466 !important ;
+}
+
+@media (max-width: 700px){
+    .total{
+        flex: 1.2
+    }
+    .totdis{
+        padding-right: 0%;
+    margin-right: 1%;
+    }
 }

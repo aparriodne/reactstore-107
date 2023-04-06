@@ -23,7 +23,7 @@ function Cart(){
         <div className='cart'>
             <h2>{numOfProd()} Items</h2>
             <h1>Ready for Purchase!</h1>
-            <div className='parent'>
+            <div className='basket'>
                 <div className='products'>
                     {cart.map((prod) => (
                         <ProductInCart key={prod._id} data={prod}></ProductInCart>
@@ -31,12 +31,13 @@ function Cart(){
                 </div>
 
                 <div className='total'>
-                    <h4>Total</h4>
+                    <div className='totdis'>
+                        <h4>Total</h4>
 
-                    <h5>${getTotalPay()}</h5>
+                        <h5>${getTotalPay()}</h5>
 
-                    <button className='paybtn btn btn-success'>Pay Now</button>
-
+                        <button className='paybtn btn btn-success'>Pay Now</button>
+                    </div>
                 </div>
             </div>
         </div>
