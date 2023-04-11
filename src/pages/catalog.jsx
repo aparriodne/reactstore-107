@@ -12,9 +12,9 @@ function Catalog() {
         loadCatalog();
     },[]);
 
-    function loadCatalog(){
+    async function loadCatalog(){
         let service = new DataService();
-        let product = service.getProducts();
+        let product = await service.getProducts();
         setProducts(product);
         let cats=["baked","drinks","produce"];
         setCatagory(cats);

@@ -1,3 +1,5 @@
+import axios from 'axios';
+
 var catalog =[
     {
         "title":"soy milk",
@@ -51,9 +53,21 @@ var catalog =[
 ];
 
 class DataService {
-    getProducts(){
-        return catalog;
+
+    async getProducts(){
+        // use to start front end without backend
+        // return catalog;
+
+        let response = await axios.get('http://127.0.0.1:5000/api/catalog');
+        return response.data
     }
+    async saveProducts(product){
+        let response = await axios.post('http://127.0.0.1:5000/api/catalog', product);
+        return response.data
+    }
+
+     
+
 }
 
 export default DataService;

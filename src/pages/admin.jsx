@@ -1,5 +1,6 @@
 import './admin.css';
 import {useState} from 'react'
+import DataService from '../dataServices/dataService';
 
 function Admin(){
     const [product, setProduct] = useState({});
@@ -27,6 +28,19 @@ function handleCouponTextChange(e){
 
 function saveProduct(){
     console.log(product);
+    // parse price to a number before saving
+    let copy = {...product};
+    copy.price = parseFloat(copy.price)
+
+    let service = new DataService();
+    service.saveProducts(copy)
+
+    setProduct({
+        title: '',
+        image: '',
+        catagory: '',
+        price: ''
+    });
 }
 
 function saveCoupon(){
@@ -43,19 +57,19 @@ function saveCoupon(){
 
                     <div className="mb-3">
                         <label  className='form-label'>Title</label>
-                        <input name='title' onChange={handleTextChange} type='text' className='form-control'/>
+                        <input name='title' value={product.title} onChange={handleTextChange} type='text' className='form-control'/>
                     </div>
                     <div className="mb-3">
                         <label  className='form-label'>category</label>
-                        <input name='category' onChange={handleTextChange} type='text' className='form-control'/>
+                        <input name='catagory' value={product.catagory} onChange={handleTextChange} type='text' className='form-control'/>
                     </div>
                     <div className="mb-3">
                         <label  className='form-label'>Image</label>
-                        <input name='image' onChange={handleTextChange} type='text' className='form-control'/>
+                        <input name='image' value={product.image} onChange={handleTextChange} type='text' className='form-control'/>
                     </div>
                     <div className="mb-3">
                         <label  className='form-label'>Price</label>
-                        <input name='price' onChange={handleTextChange} type='text' className='form-control'/>
+                        <input name='price' value={product.price} onChange={handleTextChange} type='text' className='form-control'/>
                     </div>
                     <div>
                     <button type='button' onClick={saveProduct} >Save Product</button>
